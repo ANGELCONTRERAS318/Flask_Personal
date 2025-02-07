@@ -2,15 +2,15 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("templates/index.html")
+@app.route("/")
 def home():
         return "home"
 
-@app.route("/")
+@app.route("/contacto")
 def contacto():
         return "contacto"
 
-@app.route("/")
+@app.route("/acerca_de")
 def acerca_de():
         return "acerca de"
 
