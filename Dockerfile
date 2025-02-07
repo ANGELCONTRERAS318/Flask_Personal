@@ -1,11 +1,9 @@
-FROM python:latest
+FROM python:3.9.2
 
-WORKDIR /app
+WORKDIR python-docker
 
 COPY . .
-
+  
 RUN pip3 install -r requirements.txt
 
-EXPOSE 5000
-
-CMD ["python3", "-M", "run", "flask", "app.py", "--HOST=0.0.0.0."] 
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
