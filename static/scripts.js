@@ -3,7 +3,7 @@ function showDetails(section) {
     const images = document.getElementById('images');
     if (section === 'about') {
         details.innerHTML = `<h3>Sobre Mí</h3><p>Desarrollador de software apasionado por la tecnología con 3 años de experiencia como estudiante de la carrera de Desarrollo de Sistemas de Información en el Instituto Continental de Huancayo.</p>`;
-        images.innerHTML = `<h3>Imágenes</h3><img src="images/yo.jpg" alt="Sobre Mí">`;
+        images.innerHTML = `<h3>Imágenes</h3><img src="https://miguelangel.alwaysdata.net/yo.jpg" alt="Sobre Mí">`;
     } else if (section === 'skills') {
         details.innerHTML = `<h3>Habilidades</h3><ul><li>Lenguajes de Programación: JavaScript, Python, Java, C#</li><li>Frameworks: React, Angular, Node.js, Django</li><li>Gestión de Bases de Datos: MySQL, PostgreSQL, MongoDB</li><li>Herramientas: Git, Docker, Jenkins</li></ul>`;
         images.innerHTML = `<h3>Imágenes</h3><img src="https://via.placeholder.com/150" alt="Habilidades">`;
